@@ -4,6 +4,7 @@ import dashboard from '../../assets/dashboard.png';
 import previous from '../../assets/previous.png';
 import send from '../../assets/send.png';
 import easyfill from '../../assets/easyfill.png';
+import landing2 from '../../assets/landing2.jpg';
 import {useNavigate} from "react-router-dom";
 import {useClerk} from "@clerk/clerk-react";
 
@@ -75,35 +76,46 @@ const Landing = () => {
     return (
         <section id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white">
             {/* Hero section */}
-            <div className="pt-16 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 sm:px-6 lg:px-8">
-                <div className="text-center max-w-3xl">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
-                        <span className="block">One Stop Solution To Billing 🤑 &nbsp;</span>
+            <div className="relative min-h-[calc(100vh-4rem)] flex flex-row items-center justify-between px-12 gap-12">
+                {/* Left Section (Text + Buttons) */}
+                <div className="flex-1">
+                    <h1 className="text-6xl font-extrabold leading-tight">
+                        <span className="block">One Stop Solution To Billing 🤑</span>
                         <span className="block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                            Effortless Invoicing, Professional Results.
-                        </span>
+        Effortless Invoicing, Professional Results.
+      </span>
                     </h1>
-                    <p className="mt-6 text-lg sm:text-xl text-slate-300 max-w-xl mx-auto">
-                        Stop wrestling with spreadsheets. BillQube helps you create and send beautiful invoices in minutes, so you get paid faster.
+
+                    <p className="mt-6 text-xl text-slate-300 max-w-xl">
+                        Stop wrestling with spreadsheets. BillQube helps you create and send
+                        beautiful invoices in minutes, so you get paid faster.
                     </p>
-                    <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
 
-
-
+                    {/* Buttons */}
+                    <div className="mt-10 flex flex-row items-center gap-8">
                         <a
                             onClick={handleGenerateInvoice}
-                            //href="/dashboard"
-                            className="no-underline w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow-md hover:from-indigo-700 hover:to-purple-700 transition"
+                            className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow-md hover:from-indigo-700 hover:to-purple-700 transition"
                         >
                             Generate Your First Invoice
                         </a>
                         <a
                             href="#steps"
-                            className="no-underline w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white transition"
+                            className="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white transition"
                         >
                             Learn More
                         </a>
                     </div>
+                </div>
+
+                <div className="flex-1 flex justify-center">
+                    <img
+                        src={landing2}
+                        alt="BillQube Application"
+                        className="w-[500px] h-auto drop-shadow-2xl rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_25px_rgba(99,102,241,0.6)]"
+                    />
+
+
                 </div>
             </div>
 
