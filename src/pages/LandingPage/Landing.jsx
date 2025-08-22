@@ -95,13 +95,13 @@ const Landing = () => {
                     <div className="mt-10 flex flex-row items-center gap-8">
                         <a
                             onClick={handleGenerateInvoice}
-                            className="cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow-md hover:from-indigo-700 hover:to-purple-700 transition"
+                            className="no-underline cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow-md hover:from-indigo-700 hover:to-purple-700 transition"
                         >
                             Generate Your First Invoice
                         </a>
                         <a
                             href="#steps"
-                            className="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white transition"
+                            className="no-underline inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white transition"
                         >
                             Learn More
                         </a>
