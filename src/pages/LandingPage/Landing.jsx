@@ -80,7 +80,7 @@ const Landing = () => {
                 {/* Left Section (Text + Buttons) */}
                 <div className="flex-1">
                     <h1 className="text-6xl font-extrabold leading-tight">
-                        <span className="block">One Stop Solution To Billing 🤑</span>
+                        <span className="block">One Solution To Billing </span>
                         <span className="block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
         Effortless Invoicing, Professional Results.
       </span>
